@@ -41,6 +41,7 @@ public class AppTest {
         driver1.get("https://reqres.in/");
         Thread.sleep(3000);
         driver1.navigate().to("https://github.com/mahendramistri/");
+        Thread.sleep(3000);
         driver1.close();
         driver1.quit();
     }
