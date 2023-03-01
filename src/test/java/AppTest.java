@@ -9,4 +9,9 @@ public class AppTest {
         int result = App.add(3, 4);
         assertEquals(7, result);
     }
+    @Test
+    public void testTwo() {
+        int result = App.add(3, 4);
+        assertEquals(7, result);
+    }
 }
