@@ -26,21 +26,21 @@ public class AppTest {
     @Test
     public void testTwo() throws MalformedURLException, InterruptedException {
 
-            int result = App.add(3, 4);
-            assertEquals(7, result);
+//            int result = App.add(3, 4);
+//            assertEquals(7, result);
 
-//        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-//        capabilities.setPlatform(Platform.VISTA);
-//        Map<String, Object> sauceOptions = new HashMap<>();
-//        sauceOptions.put("build", "selenium-build-5APUU");
-//        // sauceOptions.setCapability("name", "<your test name>");
-//        capabilities.setCapability("sauce:options", sauceOptions);
-//        // Create a RemoteWebDriver instance and connect to the local browsermvn
-//        WebDriver driver1 = new RemoteWebDriver(new URL("https://oauth-mahendramistri-b2316:b82ecf6f-d121-4c96-bef8-b187c151a0f6@ondemand.eu-central-1.saucelabs.com:443/wd/hub"), capabilities);
-//        // Perform the test using the driver instance
-//        driver1.get("https://mvnrepository.com/artifact/org.testng/testng");
-//        Thread.sleep(300);
-//        driver1.close();
-//        driver1.quit();
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setPlatform(Platform.VISTA);
+        Map<String, Object> sauceOptions = new HashMap<>();
+        sauceOptions.put("build", "selenium-build-5APUU");
+        // sauceOptions.setCapability("name", "<your test name>");
+        capabilities.setCapability("sauce:options", sauceOptions);
+        // Create a RemoteWebDriver instance and connect to the local browsermvn
+        WebDriver driver1 = new RemoteWebDriver(new URL("https://oauth-mahendramistri-b2316:b82ecf6f-d121-4c96-bef8-b187c151a0f6@ondemand.eu-central-1.saucelabs.com:443/wd/hub"), capabilities);
+        // Perform the test using the driver instance
+        driver1.get("https://mvnrepository.com/artifact/org.testng/testng");
+        Thread.sleep(300);
+        driver1.close();
+        driver1.quit();
     }
 }
