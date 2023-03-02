@@ -25,6 +25,7 @@ public class AppTest {
     }
     @Test
     public void testTwo() throws MalformedURLException, InterruptedException {
+
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         capabilities.setPlatform(Platform.VISTA);
         Map<String, Object> sauceOptions = new HashMap<>();
