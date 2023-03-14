@@ -37,6 +37,7 @@ public class AppTest {
         WebDriver driver1 = new RemoteWebDriver(new URL("https://oauth-mahendramistri-b2316:b82ecf6f-d121-4c96-bef8-b187c151a0f6@ondemand.eu-central-1.saucelabs.com:443/wd/hub"), capabilities);
         // Perform the test using the driver instance
         driver1.get("https://reqres.in/");
+
         Thread.sleep(3000);
         driver1.navigate().to("https://github.com/mahendramistri/");
         Thread.sleep(3000);
