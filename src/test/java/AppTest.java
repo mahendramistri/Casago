@@ -39,12 +39,12 @@ sauceOptions.put("username", "oauth-mahendramistri-9fa7e");
 sauceOptions.put("accessKey", "ed9220fb-5092-412d-bc43-1b6e35ccbe60");
 sauceOptions.put("build", "selenium-build-H0XKK");
 browserOptions.setCapability("sauce:options", sauceOptions);
-        
+
+        URL url = new URL("https://ondemand.eu-central-1.saucelabs.com:443/wd/hub");
+RemoteWebDriver driver1 = new RemoteWebDriver(url, browserOptions);
+
        
-        // Create a RemoteWebDriver instance and connect to the local browsermvn
-        WebDriver driver1 = new RemoteWebDriver(new URL("https://oauth-mahendramistri-b2316:b82ecf6f-d121-4c96-bef8-b187c151a0f6@ondemand.eu-central-1.saucelabs.com:443/wd/hub"), capabilities);
-        // Perform the test using the driver instance
-        //access key - 4ec79c41-c4d5-41a3-9f12-1443aad91bad
+    
         driver1.get("https://reqres.in/");
 
         Thread.sleep(3000);
