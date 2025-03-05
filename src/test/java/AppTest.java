@@ -29,12 +29,18 @@ public class AppTest {
 
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         capabilities.setPlatform(Platform.VISTA);
-        Map<String, Object> sauceOptions = new HashMap<>();
-        sauceOptions.put("build", "selenium-build-11WPD");
-        sauceOptions.put("username","oauth-mahendramistri-c2e63");
-        sauceOptions.put("accessKey","4ec79c41-c4d5-41a3-9f12-1443aad91bad");
-        // sauceOptions.setCapability("name", "<your test name>");
-        capabilities.setCapability("sauce:options", sauceOptions);
+       
+        ChromeOptions browserOptions = new ChromeOptions();
+        browserOptions.setPlatformName("Windows 11");
+        browserOptions.setBrowserVersion("latest");
+        
+Map<String, Object> sauceOptions = new HashMap<>();
+sauceOptions.put("username", "oauth-mahendramistri-9fa7e");
+sauceOptions.put("accessKey", "ed9220fb-5092-412d-bc43-1b6e35ccbe60");
+sauceOptions.put("build", "selenium-build-H0XKK");
+browserOptions.setCapability("sauce:options", sauceOptions);
+        
+       
         // Create a RemoteWebDriver instance and connect to the local browsermvn
         WebDriver driver1 = new RemoteWebDriver(new URL("https://oauth-mahendramistri-b2316:b82ecf6f-d121-4c96-bef8-b187c151a0f6@ondemand.eu-central-1.saucelabs.com:443/wd/hub"), capabilities);
         // Perform the test using the driver instance
