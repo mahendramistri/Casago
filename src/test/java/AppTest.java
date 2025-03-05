@@ -1,5 +1,4 @@
-import org.example.App;
-import org.junit.Test;
+
 
 import java.net.URL;
 import java.util.HashMap;
@@ -40,7 +39,7 @@ sauceOptions.put("accessKey", "ed9220fb-5092-412d-bc43-1b6e35ccbe60");
 sauceOptions.put("build", "selenium-build-H0XKK");
 browserOptions.setCapability("sauce:options", sauceOptions);
 
-        URL url = new URL("https://ondemand.eu-central-1.saucelabs.com:443/wd/hub");
+   URL url = new URL("https://ondemand.eu-central-1.saucelabs.com:443/wd/hub");
 RemoteWebDriver driver1 = new RemoteWebDriver(url, browserOptions);
 
        
